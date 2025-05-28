@@ -1,6 +1,6 @@
 import React from 'react';
 import { BrowserRouter} from "react-router-dom";
-import { StyleProvider, createGenerateClassName } from '@material-ui/core/styles';
+import { StylesProvider, createGenerateClassName } from '@material-ui/core/styles';
 
 import MarketingApp from "./components/MarketingApp";
 import Header from "./components/Header";
@@ -12,12 +12,12 @@ const generateClassName = createGenerateClassName({
 export default () => {
   return <div>
       <BrowserRouter>
-          <StyleProvider generateClassName={generateClassName}>
+          <StylesProvider generateClassName={generateClassName}>
               <div>
                   <Header/>
                   <MarketingApp/>
               </div>
-          </StyleProvider>
+          </StylesProvider>
       </BrowserRouter>
   </div>;
 }
