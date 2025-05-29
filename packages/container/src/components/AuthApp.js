@@ -13,7 +13,7 @@ export default () => {
             const { pathname } = history.location;
 
             if (pathname !== nextPathName) {
-                console.log('marketing app navigating', nextPathName);
+                console.log('auth app navigating', nextPathName);
                 history.push(nextPathName);
             }
         }
